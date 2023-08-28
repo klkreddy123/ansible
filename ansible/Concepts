@@ -1,0 +1,13 @@
+Inventory- List of hosts ansible server is managing
+
+[group] group of servers name
+serverip address or routes53 address
+
+ansible -i filename groupname --list-hosts
+
+ex: ansible -i inventory mongodb --list-hosts
+
+ansible -i filename ungrouped --list-hosts
+
+ansible -i filename all --list-hosts
+
