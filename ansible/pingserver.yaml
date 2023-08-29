@@ -2,5 +2,5 @@
   hosts: mongodb
   become: yes
   tasks:
-    - name: pinging the server
-      ansibe.builtin.ping:
+  - name: pinging the server
+    ansibe.builtin.ping:
