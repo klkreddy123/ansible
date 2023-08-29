@@ -13,4 +13,4 @@
     vars:
       NAME: klkreddy-task
     ansible.builtin.debug:
-      msg: Trainee name is {{NAME}}
+      msg: "Trainee name is {{NAME}}"
