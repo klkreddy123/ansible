@@ -4,10 +4,10 @@
     NAME: klkreddy-play
   # vars_files:
   # - variables.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: Please enter tainee name
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: Please enter tainee name
+  #   private: false
   tasks:
   - name: variables at task level
   #   vars:
@@ -19,4 +19,5 @@
       # 1 preferece command line
       # 2 after command line preference is task level
       # 3 file level
-      # 4 
+      # 4 prompt
+      # 5  
