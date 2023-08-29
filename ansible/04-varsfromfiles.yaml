@@ -1,0 +1,9 @@
+- name: Varibles from files
+  hosts: mongodb
+  become: yes
+  vars_files:
+  - variables.yaml 
+  tasks:
+  - name: taking values from file
+    ansible.builtin.debug:
+      msg: " I am learning {{COURSE}} as a {{TRAINEE}} and duration of the couse is {{DURATION}}"
