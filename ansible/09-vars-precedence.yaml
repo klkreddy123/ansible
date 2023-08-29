@@ -2,7 +2,7 @@
   hosts: mongodb
   vars:
     NAME: klkreddy-play
-  vars_file:
+  vars_files:
   - variables.yaml
   vars_prompt:
   - name: NAME
