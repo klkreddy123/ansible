@@ -10,4 +10,4 @@
     ansibe.builtin.ping:     #module
 
 # command to run playbook
-#ansible-playbook -i inventory -e ansilbe_user=centos ansible_password=DevOps321 playbook.yaml
+#ansible-playbook -i inventory -e ansilbe_user=centos -e ansible_password=DevOps321 playbook.yaml
