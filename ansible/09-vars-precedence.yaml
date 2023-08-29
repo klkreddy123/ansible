@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
     NAME: klkreddy-play
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: NAME
     prompt: Please enter tainee name
@@ -18,4 +18,5 @@
 
       # 1 preferece command line
       # 2 after command line preference is task level
-      # 3 
+      # 3 file level
+      # 4 
