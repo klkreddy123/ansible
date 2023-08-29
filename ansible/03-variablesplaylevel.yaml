@@ -1,7 +1,7 @@
 - name: Variables at playlevel
   hosts: mongodb
   vars:
-    COURSE: DevOps
+    COURSE: DevOps with AWS
     LEARNER: Klkreddy
     DURATION: 110HRS
   tasks:
