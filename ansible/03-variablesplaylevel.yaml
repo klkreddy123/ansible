@@ -1,0 +1,10 @@
+- name: Variables at playlevel
+  hosts: mongodb
+  vars:
+    COURSE: DevOps
+    LEARNER: Klkreddy
+    DURATION: 110HRS
+  tasks:
+  - name: Replacing variables in message
+    ansible.builtin.debug:
+    - msg: " Hello i am learning {{COURSE}} ,my name is {{LEARNER}} and the duation for the course is {{DURATION}}"
