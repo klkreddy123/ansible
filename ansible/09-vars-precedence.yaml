@@ -9,11 +9,11 @@
     prompt: Please enter tainee name
     private: false
   tasks:
-  # - name: variables at task level
+  - name: variables at task level
   #   vars:
   #     NAME: klkreddy-task
-  ansible.builtin.debug:
-    msg: "Trainee name is {{NAME}}"
+    ansible.builtin.debug:
+      msg: "Trainee name is {{NAME}}"
 
 
       # 1 preferece command line
