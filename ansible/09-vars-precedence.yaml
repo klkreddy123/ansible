@@ -1,0 +1,16 @@
+- name: testing variable precedence
+  hosts: mongodb
+  vars:
+    NAME: klkreddy-play
+  vars_file:
+  - variables.yaml
+  vars_prompt:
+  - name: NAME
+    prompt: Please enter tainee name
+    private: false
+  tasks:
+  - name: variables at task level
+    vars:
+      NAME: klkreddy-task
+    ansible.builtin.debug:
+      msg: Trainee name is {{NAME}}

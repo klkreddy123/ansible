@@ -4,3 +4,5 @@
   - name: print variable from command line
     ansible.builtin.debug:
       msg: "This value is variable course is {{COURSE}}"
+
+#ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 -e COURSE=DevOps 08-vars_args_commandline.yaml
