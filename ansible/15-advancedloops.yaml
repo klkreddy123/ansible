@@ -4,11 +4,10 @@
   tasks:
   - name: install or remove packages
     ansible.builtin.yum:
-    name: {{item.name}}
-    state: {{item.state}}
+      name: {{item.name}}
+      state: {{item.state}}
   #list of maps
   loop:
   - {name: 'nginx', state: 'absent'}
   - {name: 'postfix', state: 'installed'}
   - {name: 'mailx', state: 'installed'}
-  
